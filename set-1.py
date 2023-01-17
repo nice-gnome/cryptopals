@@ -5,11 +5,6 @@
 # 
 from base64 import b64encode
 
-# hex -> base64
-# s = 'cafebabe'
-# b64 = b64encode(bytes.fromhex(s)).decode()
-# print('cafebabe in base64:', b64)
-
 def hex_to_base64(hex):
     return str(b64encode(bytes.fromhex(hex)).decode())
 
